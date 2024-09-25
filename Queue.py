@@ -12,3 +12,8 @@ class Queue:
             return self.queue.popleft()
         return None  # Return None if the queue is empty
 
+    def is_empty(self):
+        return len(self.queue) == 0
+
+    def size(self):
+        return len(self.queue)
