@@ -17,3 +17,11 @@ class Queue:
 
     def size(self):
         return len(self.queue)
+
+
+# Example usage
+queue = Queue()
+queue.enqueue(10)
+queue.enqueue(20)
+print(queue.dequeue())  # Output: 10
+print(queue.dequeue())  # Output: 20
