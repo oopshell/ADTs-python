@@ -26,3 +26,20 @@ class BinarySearchTree:
             else:
                 self._insert_recursive(node.right, value)
 
+    def inorder_traversal(self, node):
+        if node:
+            self.inorder_traversal(node.left)
+            print(node.value, end=" ")
+            self.inorder_traversal(node.right)
+
+
+# Example usage
+bst = BinarySearchTree()
+bst.insert(50)
+bst.insert(30)
+bst.insert(70)
+bst.insert(20)
+bst.insert(40)
+bst.insert(60)
+bst.insert(80)
+bst.inorder_traversal(bst.root)  # Output: 20 30 40 50 60 70 80
