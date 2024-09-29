@@ -9,3 +9,5 @@ Queues can be implemented using Python `collections.deque` to achieve O(1) compl
 
 ## 3. Linked List
 A singly linked list consists of nodes where each node contains a value and a pointer to the next node.
+
+## 4. Binary Search Tree (BST)
