@@ -11,3 +11,6 @@ A singly linked list consists of nodes where each node contains a value and a po
 
 ## 4. Binary Search Tree (BST)
 A binary search tree (BST) is a binary tree where each node has a value greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree.
+
+## 5. Hash Table
+In Python, a hash table can be implemented using dictionaries. However, we can build a simplified custom hash table.
