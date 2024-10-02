@@ -14,3 +14,7 @@ class HashTable:
         index = self._hash_function(key)
         return self.table[index]
 
+    def delete(self, key):
+        index = self._hash_function(key)
+        self.table[index] = None
+
