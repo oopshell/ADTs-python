@@ -6,3 +6,7 @@ class HashTable:
     def _hash_function(self, key):
         return hash(key) % self.size
 
+    def insert(self, key, value):
+        index = self._hash_function(key)
+        self.table[index] = value
+
