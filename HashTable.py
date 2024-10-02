@@ -3,3 +3,6 @@ class HashTable:
         self.size = size
         self.table = [None] * size
 
+    def _hash_function(self, key):
+        return hash(key) % self.size
+
