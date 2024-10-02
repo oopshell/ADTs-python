@@ -10,3 +10,7 @@ class HashTable:
         index = self._hash_function(key)
         self.table[index] = value
 
+    def search(self, key):
+        index = self._hash_function(key)
+        return self.table[index]
+
