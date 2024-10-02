@@ -18,3 +18,11 @@ class HashTable:
         index = self._hash_function(key)
         self.table[index] = None
 
+
+# Example usage
+hash_table = HashTable(10)
+hash_table.insert("apple", 5)
+hash_table.insert("banana", 10)
+print(hash_table.search("apple"))  # Output: 5
+hash_table.delete("apple")
+print(hash_table.search("apple"))  # Output: None
